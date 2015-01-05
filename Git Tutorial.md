@@ -17,7 +17,7 @@ To get the code down from Github run this command
 ```
 git clone <CLONE URL>
 ```
-Change the URL depending on what repository you want. For instance to the Wall Bounce Project code you would use `https://github.com/Team4761/Wall-Bounce-Project.git`  
+Change the URL depending on what repository you want. For instance, for the Wall Bounce Project code you would use `https://github.com/Team4761/Wall-Bounce-Project.git`  
 
 The clone URL is on the right side of the home page for every repository.
 
