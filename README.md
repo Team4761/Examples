@@ -6,9 +6,9 @@ This is an example project of FRC Java code for new team members.
 Installation
 ------------
 
-This project is IDE-independent. That means it follows the philosophy that the code works in any IDE, however, it is recommended that one uses Eclipse. This is because FRC released tools for programming in Eclipse, not any other IDE. To get this project, and future projects, in Eclipse do the following (these instructions assume you have Eclipse along with the FRC plugins, if not go here: http://wpilib.screenstepslive.com/s/4485/m/13809/l/145002-installing-eclipse-c-java)
+This project is IDE-independent. That means it follows the philosophy that the code works in any IDE (Integrated Development Environment, or code editor), however, it is recommended that one uses Eclipse. This is because FRC released tools for programming in Eclipse, not any other IDE. To get this project, and future projects, in Eclipse do the following (these instructions assume you have Eclipse along with the FRC plugins, if not go here: http://wpilib.screenstepslive.com/s/4485/m/13809/l/145002-installing-eclipse-c-java)
 0.	**Get EGit!**
-Yes step zero, things are zero-indexed get used to it. To get EGit follow the instructions given [here](http://eclipse.org/egit/download/).
+Yes step zero, things are zero-indexed get used to it (just remember less than not less than or equal to, seriously, you will make this mistake a million times). To get EGit follow the instructions given [here](http://eclipse.org/egit/download/).
 1.	**Get the URL**
 In order to get the project we need to download it from github and we do so by getting a URL. The URL for this repository is given on GitHub (the white box that says `HTTPS clone URL`) this needs to copied to our clipboard.
 2.	**Clone the Project**
