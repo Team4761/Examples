@@ -6,8 +6,8 @@ This is a full walkthrough on Git for Windows, and most operating systems that e
 Installation & Setup
 ------------
 **Follow these links to install and setup Github**  
-[here](https://help.github.com/articles/set-up-git/)  
-[here](https://help.github.com/articles/generating-ssh-keys/)  
+[Setup](https://help.github.com/articles/set-up-git/)  
+[Generating SSH Keys](https://help.github.com/articles/generating-ssh-keys/)  
 
 Using Git From Terminal/Command Line
 ------------
