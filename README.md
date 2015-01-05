@@ -18,4 +18,4 @@ Select the `master` branch (or the branch that you should be working on). Hit Ne
   
 Other Tutorials
 ------------
-**Git Tutorial:** [a link](https://github.com/Team4761/Examples/blob/master/Git%20Tutorial.md)
+[Git Tutorial](https://github.com/Team4761/Examples/blob/master/Git%20Tutorial.md)
