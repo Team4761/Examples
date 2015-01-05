@@ -6,7 +6,7 @@ This is an example project of FRC Java code for new team members.
 Installation
 ------------
 
-This project is IDE-independent. That means it follows the philosophy that the code works in any IDE (Integrated Development Environment, or code editor), however, it is recommended that one uses Eclipse. This is because FRC released tools for programming in Eclipse, not any other IDE. To get this project, and future projects, in Eclipse do the following (these instructions assume you have Eclipse along with the FRC plugins, if not go here: http://wpilib.screenstepslive.com/s/4485/m/13809/l/145002-installing-eclipse-c-java)  
+To get this project, and future projects, in Eclipse do the following (these instructions assume you have Eclipse along with the FRC plugins, if not go here: http://wpilib.screenstepslive.com/s/4485/m/13809/l/145002-installing-eclipse-c-java)  
 0.	**Get EGit!**  
 Yes step zero, things are zero-indexed get used to it (just remember less than not less than or equal to, seriously, you will make this mistake a million times). To get EGit follow the instructions given [here](http://eclipse.org/egit/download/).  
 1.	**Get the URL**  
@@ -16,6 +16,6 @@ Now we need to clone the project to our hard disk. In Eclipse go to File>Import 
 3. 	**After that, branches and wizards**  
 Select the `master` branch (or the branch that you should be working on). Hit Next, and select a place for your project to be saved to. Hit Next, and *most importantly*, please, check the box next to `Import as general project` for your wizard (this might be subject to change depending upon if the IDE-independence philosophy is kept.) hit Next, choose a good project name for yourself, and hit Finish. You are all set! :octocat:
   
-Other Tutorials
+Other Info
 ------------
-[Git Tutorial](https://github.com/Team4761/Examples/blob/master/Git%20Tutorial.md)
+[Git for all other IDEs](https://github.com/Team4761/Examples/blob/master/Git%20Tutorial.md)
