@@ -55,3 +55,5 @@ You will want to frequently get the newest code, so run
 git pull
 ```
 This will download all of the latest code
+  
+*If you find any errors feel free to fix them or tell me (Jake Kinsella)*
