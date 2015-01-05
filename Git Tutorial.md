@@ -5,7 +5,7 @@ This is a full walkthrough on Git for Windows, and most operating systems that e
 
 Using Git From Terminal/Command Line
 ------------------------------------
-Jake highly encourages using git from terminal/command line. You can use it from Eclipse, but in Jakes opinion it offers less functionality if something goes wrong.
+Jake highly encourages using git from terminal/command line. You can use it from Eclipse, but in Jakes opinion it offers less functionality if something goes wrong (it does - Jake).
 
 ###Installation & Setup
 Follow these links for instructions on how to install git and setup Github  
