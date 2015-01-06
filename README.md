@@ -18,4 +18,4 @@ Select the `master` branch (or the branch that you should be working on). Hit Ne
   
 Other Info
 ------------
-[Git for all other IDEs](https://github.com/Team4761/Examples/blob/master/Git%20Tutorial.md)
+[Git for Terminal/Git Shell](https://github.com/Team4761/Examples/wiki/Basic-Github-Tutorial)
