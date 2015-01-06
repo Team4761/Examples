@@ -18,5 +18,5 @@ Select the `master` branch (or the branch that you should be working on). Hit Ne
   
 Other Info
 ------------
-[Our Wiki](https://github.com/Team4761/Examples/wiki)
+[Our Wiki](https://github.com/Team4761/Examples/wiki)  
 [Git for Terminal/Git Shell](https://github.com/Team4761/Examples/wiki/Basic-Github-Tutorial)
