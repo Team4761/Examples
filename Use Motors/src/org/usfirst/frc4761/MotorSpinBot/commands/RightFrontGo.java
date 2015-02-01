@@ -18,13 +18,13 @@ public class  RightFrontGo extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	speed = 0;
+    	speed = -1.0;
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	rf.set(speed);
-    	speed = speed + 0.05;
+    	speed += 0.05;
     }
 
     // Make this return true when this Command no longer needs to run execute()

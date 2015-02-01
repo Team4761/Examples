@@ -15,6 +15,7 @@ public class RobotMap {
     public static Talon driveTrainLeftRear;
     public static Talon driveTrainRightFront;
     public static Talon driveTrainRightRear;
+    public static Talon conveyorBelt;
     public static RobotDrive driveTrainRoboDrive;
     public static Gyro driveTrainGyro;
     public static AnalogInput driveTrainDistanceSensor;
@@ -39,5 +40,8 @@ public class RobotMap {
         driveTrainRoboDrive.setExpiration(0.1);
         driveTrainRoboDrive.setSensitivity(0.5);
         driveTrainRoboDrive.setMaxOutput(1.0);
+        
+        conveyorBelt = new Talon(4);
+        LiveWindow.addActuator("Conveyor Belt", "Conveyor Belt", conveyorBelt);
     }
 }

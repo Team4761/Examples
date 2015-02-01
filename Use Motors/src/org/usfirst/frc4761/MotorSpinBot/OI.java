@@ -47,6 +47,8 @@ public class OI {
         SmartDashboard.putData("Left Rear Go", new LeftRearGo());
 
         SmartDashboard.putData("Right Rear Go", new RightRearGo());
+        
+        SmartDashboard.putData("Conveyor Go", new ConveyorMove());
     }
 }
 
