@@ -11,26 +11,26 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
  * floating around.
  */
 public class RobotMap {
-    public static SpeedController driveTrainLeftFront;
-    public static SpeedController driveTrainLeftRear;
-    public static SpeedController driveTrainRightFront;
-    public static SpeedController driveTrainRightRear;
+    public static Talon driveTrainLeftFront;
+    public static Talon driveTrainLeftRear;
+    public static Talon driveTrainRightFront;
+    public static Talon driveTrainRightRear;
     public static RobotDrive driveTrainRoboDrive;
     public static Gyro driveTrainGyro;
     public static AnalogInput driveTrainDistanceSensor;
 
     public static void init() {
         driveTrainLeftFront = new Talon(3);
-        LiveWindow.addActuator("Drive Train", "Left Front", (Talon) driveTrainLeftFront);
+        LiveWindow.addActuator("Drive Train", "Left Front", driveTrainLeftFront);
         
         driveTrainLeftRear = new Talon(0);
-        LiveWindow.addActuator("Drive Train", "Left Rear", (Talon) driveTrainLeftRear);
+        LiveWindow.addActuator("Drive Train", "Left Rear", driveTrainLeftRear);
         
         driveTrainRightFront = new Talon(2);
-        LiveWindow.addActuator("Drive Train", "Right Front", (Talon) driveTrainRightFront);
+        LiveWindow.addActuator("Drive Train", "Right Front", driveTrainRightFront);
         
         driveTrainRightRear = new Talon(1);
-        LiveWindow.addActuator("Drive Train", "Right Rear", (Talon) driveTrainRightRear);
+        LiveWindow.addActuator("Drive Train", "Right Rear", driveTrainRightRear);
         
         driveTrainRoboDrive = new RobotDrive(driveTrainLeftFront, driveTrainLeftRear,
               driveTrainRightFront, driveTrainRightRear);
@@ -39,11 +39,5 @@ public class RobotMap {
         driveTrainRoboDrive.setExpiration(0.1);
         driveTrainRoboDrive.setSensitivity(0.5);
         driveTrainRoboDrive.setMaxOutput(1.0);
-
-        driveTrainGyro = new Gyro(0);
-        LiveWindow.addSensor("Drive Train", "Gyro", driveTrainGyro);
-        driveTrainGyro.setSensitivity(0.007);
-        driveTrainDistanceSensor = new AnalogInput(2);
-        LiveWindow.addSensor("Drive Train", "Distance Sensor", driveTrainDistanceSensor);
     }
 }
