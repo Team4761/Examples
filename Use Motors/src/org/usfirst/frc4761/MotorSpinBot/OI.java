@@ -36,7 +36,7 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
 
-    public OI() {
+    public OI () {
         // SmartDashboard Buttons
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
 
@@ -48,7 +48,9 @@ public class OI {
 
         SmartDashboard.putData("Right Rear Go", new RightRearGo());
         
-        SmartDashboard.putData("Conveyor Go", new ConveyorMove());
+        SmartDashboard.putData("Elevator Up", new RaiseElevator());
+
+        SmartDashboard.putData("Elevator Down", new LowerElevator());
     }
 }
 

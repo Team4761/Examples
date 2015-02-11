@@ -2,36 +2,37 @@ package org.usfirst.frc4761.MotorSpinBot.commands;
 
 import org.usfirst.frc4761.MotorSpinBot.RobotMap;
 
-import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class ConveyorMove extends Command {
-	double speed;
-	SpeedController lf = RobotMap.conveyorBelt;
-	
-    public ConveyorMove() {
+public class RaiseElevator extends Command {
+
+    public RaiseElevator() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
 
     // Called just before this Command runs the first time
- // Called just before this Command runs the first time
     protected void initialize() {
-    	speed = 0;
+    	setTimeout(1);
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	lf.set(speed);
-    	speed -= 0.05;
+    	RobotMap.elevator1.set(0.25);
+    	RobotMap.elevator2.set(0.25);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return speed <= -1.0;
+    	if (isTimedOut()) {
+    		RobotMap.elevator1.set(0);
+    		RobotMap.elevator2.set(0);
+    	}
+    	
+        return isTimedOut();
     }
 
     // Called once after isFinished returns true

@@ -11,26 +11,25 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
  * floating around.
  */
 public class RobotMap {
-    public static Talon driveTrainLeftFront;
-    public static Talon driveTrainLeftRear;
-    public static Talon driveTrainRightFront;
-    public static Talon driveTrainRightRear;
-    public static Talon conveyorBelt;
+    public static VictorSP driveTrainLeftFront;
+    public static VictorSP driveTrainLeftRear;
+    public static VictorSP driveTrainRightFront;
+    public static VictorSP driveTrainRightRear;
+    public static VictorSP elevator1;
+    public static VictorSP elevator2;
     public static RobotDrive driveTrainRoboDrive;
-    public static Gyro driveTrainGyro;
-    public static AnalogInput driveTrainDistanceSensor;
 
     public static void init() {
-        driveTrainLeftFront = new Talon(3);
+        driveTrainLeftFront = new VictorSP(3);
         LiveWindow.addActuator("Drive Train", "Left Front", driveTrainLeftFront);
         
-        driveTrainLeftRear = new Talon(0);
+        driveTrainLeftRear = new VictorSP(0);
         LiveWindow.addActuator("Drive Train", "Left Rear", driveTrainLeftRear);
         
-        driveTrainRightFront = new Talon(2);
+        driveTrainRightFront = new VictorSP(2);
         LiveWindow.addActuator("Drive Train", "Right Front", driveTrainRightFront);
         
-        driveTrainRightRear = new Talon(1);
+        driveTrainRightRear = new VictorSP(1);
         LiveWindow.addActuator("Drive Train", "Right Rear", driveTrainRightRear);
         
         driveTrainRoboDrive = new RobotDrive(driveTrainLeftFront, driveTrainLeftRear,
@@ -41,7 +40,10 @@ public class RobotMap {
         driveTrainRoboDrive.setSensitivity(0.5);
         driveTrainRoboDrive.setMaxOutput(1.0);
         
-        conveyorBelt = new Talon(4);
-        LiveWindow.addActuator("Conveyor Belt", "Conveyor Belt", conveyorBelt);
+        elevator1 = new VictorSP(8);
+        LiveWindow.addActuator("Elevator", "Elevator 1", elevator1);
+        
+        elevator1 = new VictorSP(9);
+        LiveWindow.addActuator("Elevator", "Elevator 2", elevator2);
     }
 }
