@@ -1,6 +1,13 @@
 package org.usfirst.frc4761.MotorSpinBot;
 
+import org.usfirst.frc4761.MotorSpinBot.commands.PlowExtend;
+import org.usfirst.frc4761.MotorSpinBot.commands.PlowOff;
+import org.usfirst.frc4761.MotorSpinBot.commands.PlowRetract;
+import org.usfirst.frc4761.MotorSpinBot.commands.RcLift;
+import org.usfirst.frc4761.MotorSpinBot.commands.RcLower;
+import org.usfirst.frc4761.MotorSpinBot.commands.RcOff;
 import org.usfirst.frc4761.MotorSpinBot.commands.*;
+
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
@@ -51,6 +58,18 @@ public class OI {
         SmartDashboard.putData("Elevator Up", new RaiseElevator());
 
         SmartDashboard.putData("Elevator Down", new LowerElevator());
+        
+        SmartDashboard.putData("RC Lower", new RcLower());
+        
+		SmartDashboard.putData("RC Lift", new RcLift());
+		
+		SmartDashboard.putData("RC Off", new RcOff());
+		
+		SmartDashboard.putData("Plow Extend", new PlowExtend());
+		
+		SmartDashboard.putData("Plow Off", new PlowOff());
+		
+		SmartDashboard.putData("Plow Retract", new PlowRetract());
     }
 }
 

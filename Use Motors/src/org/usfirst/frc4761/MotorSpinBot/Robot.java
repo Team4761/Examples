@@ -4,6 +4,9 @@ import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+
+import org.usfirst.frc4761.MotorSpinBot.subsystems.Plower;
+import org.usfirst.frc4761.MotorSpinBot.subsystems.RcGrabber;
 import org.usfirst.frc4761.MotorSpinBot.commands.*;
 
 /**
@@ -14,6 +17,8 @@ import org.usfirst.frc4761.MotorSpinBot.commands.*;
  * directory.
  */
 public class Robot extends IterativeRobot {
+	public static final RcGrabber rcGrabber = new RcGrabber();
+	public static final Plower plower = new Plower();
 
     Command autonomousCommand;
 

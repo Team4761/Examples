@@ -1,7 +1,6 @@
 package org.usfirst.frc4761.MotorSpinBot;
     
 import edu.wpi.first.wpilibj.*;
-
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 /**
@@ -18,6 +17,8 @@ public class RobotMap {
     public static VictorSP elevator1;
     public static VictorSP elevator2;
     public static RobotDrive driveTrainRoboDrive;
+    public static DoubleSolenoid rcpneumatic = new DoubleSolenoid(0, 0, 1);
+	public static DoubleSolenoid plowpneumatic = new DoubleSolenoid(0, 2, 3);
 
     public static void init() {
         driveTrainLeftFront = new VictorSP(3);
