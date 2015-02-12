@@ -70,6 +70,8 @@ public class OI {
 		SmartDashboard.putData("Plow Off", new PlowOff());
 		
 		SmartDashboard.putData("Plow Retract", new PlowRetract());
+		
+		SmartDashboard.putData("Run Main Conveyor", new ConveyorForward());
     }
 }
 

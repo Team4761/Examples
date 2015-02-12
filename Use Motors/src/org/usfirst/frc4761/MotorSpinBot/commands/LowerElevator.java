@@ -21,8 +21,8 @@ public class LowerElevator extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	RobotMap.elevator1.set(-0.25);
-    	RobotMap.elevator2.set(-0.25);
+    	RobotMap.elevator1.set(-1);
+    	RobotMap.elevator2.set(-1);
     }
 
     // Make this return true when this Command no longer needs to run execute()

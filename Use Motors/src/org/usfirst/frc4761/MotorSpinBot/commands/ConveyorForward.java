@@ -7,9 +7,9 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class RaiseElevator extends Command {
+public class ConveyorForward extends Command {
 
-    public RaiseElevator() {
+    public ConveyorForward() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -21,17 +21,14 @@ public class RaiseElevator extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	RobotMap.elevator1.set(1);
-    	RobotMap.elevator2.set(1);
+    	RobotMap.mainConveyor.set(0.5);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
     	if (isTimedOut()) {
-    		RobotMap.elevator1.set(0);
-    		RobotMap.elevator2.set(0);
+    		RobotMap.mainConveyor.set(0);
     	}
-    	
         return isTimedOut();
     }
 

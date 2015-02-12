@@ -14,6 +14,7 @@ public class RobotMap {
     public static VictorSP driveTrainLeftRear;
     public static VictorSP driveTrainRightFront;
     public static VictorSP driveTrainRightRear;
+    public static VictorSP mainConveyor;
     public static VictorSP elevator1;
     public static VictorSP elevator2;
     public static RobotDrive driveTrainRoboDrive;
@@ -44,7 +45,10 @@ public class RobotMap {
         elevator1 = new VictorSP(8);
         LiveWindow.addActuator("Elevator", "Elevator 1", elevator1);
         
-        elevator1 = new VictorSP(9);
+        elevator2 = new VictorSP(9);
         LiveWindow.addActuator("Elevator", "Elevator 2", elevator2);
+        
+        mainConveyor = new VictorSP(6);
+        LiveWindow.addActuator("Conveyor", "Main Conveyor", mainConveyor);
     }
 }
