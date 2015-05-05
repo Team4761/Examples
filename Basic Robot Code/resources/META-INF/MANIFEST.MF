@@ -1,9 +1,0 @@
-MIDlet-Name: CommandBasedRobot
-MIDlet-Version: 1.0.0
-MIDlet-Vendor: FIRST
-MIDlet-1: CommandBasedRobot, , com.github.team4761.code.CommandBasedRobot
-MicroEdition-Profile: IMP-1.0
-MicroEdition-Configuration: CLDC-1.1
-
-
-
